@@ -1,0 +1,1 @@
+const hero = document.querySelector('.opening'); const quick = document.querySelector('.quick-contact'); if ('IntersectionObserver' in window) { new IntersectionObserver(([entry]) => quick.classList.toggle('visible', !entry.isIntersecting), {threshold: 0}).observe(hero); }
